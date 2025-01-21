@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../compare_classifiers'))
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -8,7 +12,7 @@
 
 project = u"compare_classifiers"
 copyright = u"2025, Bryan Lee"
-author = u"Bryan Lee"
+author = u"Bryan Lee, Susannah Sun, Wangkai Zhu, Ke Gao"
 
 # -- General configuration ---------------------------------------------------
 
@@ -20,7 +24,10 @@ extensions = [
     "autoapi.extension",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
+    "sphinx.ext.autodoc",
+    "sphinx_autodoc_typehints"
 ]
+
 autoapi_dirs = ["../src"]
 
 # List of patterns, relative to source directory, that match files and
